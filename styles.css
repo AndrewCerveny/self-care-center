@@ -6,3 +6,56 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+.container {
+  box-sizing: content-box;
+  height:100%;
+  width:100%;
+  padding-bottom:40%;
+  display:flex;
+  justify-content: center;
+  flex-direction:column;
+  align-items:center;
+  border: 1px solid black;
+  background-image:linear-gradient(#134d71,#78a7c6,#f7e4bf);
+}
+
+.self-care {
+  color: white;
+  font-family:'Quicksand', sans-serif;
+  font-size: xx-large;
+
+}
+.type-of-message {
+  color: white;
+}
+
+.input-block {
+  background-color:white;
+  padding-left: 10%;
+  padding-right:8%;
+  padding-bottom: 3%;
+
+}
+.tag-grouping {
+  font-size: x-large;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+
+
+
+
+
+/* .message-inputs {
+  display: flex;
+  border: 8px solid black;
+}
+.tag-grouping {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-block {
+  background-color:#fffff;
+} */
