@@ -29,16 +29,38 @@ black - #000000;
   color: white;
 }
 
-.input-block {
+.wrapper-inputs {
   background-color:white;
   padding-left: 10%;
   padding-right:8%;
   padding-bottom: 3%;
 
 }
-.tag-grouping {
+.wrapper-tags {
   font-size: x-large;
   font-family: 'Quicksand', sans-serif;
+
+}
+
+.wrapper-img {
+  display: flex;
+  border:6px solid black;
+  height:170px;
+  width:700px;
+  padding-top: 20px;
+  margin-top:100px;
+  background-color:white;
+  justify-content: center;
+
+
+
+}
+
+#big-bell {
+align-self:center;
+max-width: 30%;
+height:150px;
+
 
 }
 
