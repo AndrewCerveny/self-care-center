@@ -6,65 +6,92 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+* {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+html {
+  height: 100vh;
+}
+
 .container {
-  box-sizing: content-box;
-  height:100%;
-  width:100%;
-  padding-bottom:40%;
-  display:flex;
+  width: 100%;
+  margin: 0;
+  display: flex;
   justify-content: center;
-  flex-direction:column;
-  align-items:center;
-  border: 1px solid black;
-  background-image:linear-gradient(#134d71,#78a7c6,#f7e4bf);
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(#134d71,#78a7c6,#f7e4bf);
 }
 
 .self-care {
   color: white;
-  font-family:'Quicksand', sans-serif;
   font-size: xx-large;
-
 }
+
 .type-of-message {
   color: white;
+  margin-bottom: 10px;
 }
 
 .wrapper-inputs {
-  background-color:white;
-  padding-left: 10%;
-  padding-right:8%;
-  padding-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100px;
+  width: 100%;
+
 
 }
+
 .wrapper-tags {
-  font-size: x-large;
-  font-family: 'Quicksand', sans-serif;
+  display: flex;
+
+  align-items: center;
+  font-style: italic;
+  justify-content: space-evenly;
+  height: 50px;
+  width: 100%;
+}
+#affirmation-tag, #mantra-tag {
+  width: 30%;
 
 }
-
 .wrapper-img {
   display: flex;
-  border:6px solid black;
-  height:170px;
-  width:700px;
-  padding-top: 20px;
-  margin-top:100px;
-  background-color:white;
+  height: 170px;
+  width: 70%;
+  margin-top: 100px;
+  background-color: white;
   justify-content: center;
-
-
-
+  align-items: center;
 }
 
 #big-bell {
-align-self:center;
-max-width: 30%;
-height:150px;
-
-
+  width: 10%;
 }
 
+.wrapper-inputs, .wrapper-img {
+  border-radius: 18px;
+}
 
+.wrapper-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.receive-btn {
+  background-color: #134d71;
+  color: white;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  width: 32%;
+  font-size: medium;
+}
 
 
 
@@ -79,5 +106,5 @@ height:150px;
 }
 
 .input-block {
-  background-color:#fffff;
+  background-color: #fffff;
 } */

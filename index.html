@@ -4,21 +4,27 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <div class="container">
-      <h1 class="self-care"> ✨ Self Care Center✨ </h1>
+  <body class="container">
+    <h1 class="self-care"> ✨ Self Care Center✨ </h1>
+    <section class="wrapper-input-container">
       <h2 class="type-of-message"> What type of message? </h2>
-      <section class="wrapper-inputs">
-        <section class="wrapper-tags">
-          <input type="radio"id="affirmation-tag"> affirmation </input>
-          <input type="radio" id="mantra-tag"> mantra </input>
-        </section>
-        <button class="receive-btn"> Receive Message</button>
-      </section>
-        <div class="wrapper-img">
-          <img id="big-bell" src="assets/meditate.svg" alt="bell-icon">
+      <article class="wrapper-inputs">
+        <div class="wrapper-tags">
+          <div class="affirmation-container">
+            <input type="radio" id="affirmation">
+            <label for="affirmation">affirmation</label>
+          </div>
+          <div class="mantra-container">
+            <input type="radio" id="mantra">
+            <label for="mantra">mantra</label>
+          </div>
         </div>
-    </div>
+        <button class="receive-btn"> Receive Message</button>
+      </article>
+    </section>
+    <section class="wrapper-img">
+      <img id="big-bell" src="assets/meditate.svg" alt="bell-icon">
+    </section>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
