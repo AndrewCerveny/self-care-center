@@ -17,7 +17,8 @@ They would need to go to my Github, fork my repository self-care. Clone it to th
 
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
-screenShot will be provided with turn in.
+[Screen Shot 2022-09-11 at 3 00 55 PM](https://user-images.githubusercontent.com/104449342/189544738-c08707d1-e01d-4ebc-8a9c-dbe0dde8453f.png)
+
 
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
@@ -34,4 +35,5 @@ I was terrified to start, but once I did I saw the work flow and was able to ide
 [//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
 - Super proud of myself for starting.
 - querySelectors and Event listeners where probably the most exciting because i could see the result.
-- My Last affirmation was broken so i went to the label checked the values made sure they aligned and then started looking for type errors. I had a lower case t that needed to be T. Broke the whole function. Now it is fixed. 
+- My Last affirmation was broken so i went to the label checked the values made sure they aligned and then started looking for type errors. I had a lower case t that needed to be T. Broke the whole function. Now it is fixed!
+
