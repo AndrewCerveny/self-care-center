@@ -4,8 +4,48 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   </head>
-  <body>
-  
+  <body class="container">
+    <h1 class="self-care"> ✨ Self Care Center✨ </h1>
+    <section class="wrapper-input-container">
+      <h2 class="type-of-message"> What type of message? </h2>
+      <article class="wrapper-inputs">
+        <div class="wrapper-tags">
+            <div class="affirmation-container">
+            <input class="radioBtns-class"type="radio" value="affirmations" name="positivity" id="affirmation">
+            <label for="affirmation">affirmation</label>
+          </div>
+          <div class="mantra-container">
+            <input class="radioBtns-class" type="radio" value="mantras" name="positivity" id="mantra">
+            <label for="mantra">mantra</label>
+          </div>
+        </div>
+        <button class="receive-btn"> Receive Message</button>
+      </article>
+    </section>
+    <section class="wrapper-img">
+        <p class="display-text"></p>
+        <img id="big-bell" src="assets/meditate.svg" alt="bell-icon">
+        <div class="form-components">
+          <form class="hidden-f form-container" id="form-page">
+          <div class="wrapper-aff2">
+            <label class="aff-input" for="text-choice"> Affirmation</label>
+            <input type="radio" class="text-choice" id="input-aff" name="user-choice" value="affirmation-t">
+          </div>
+          <div class="wrapper-mant2">
+            <label class="mant-input" for="text-choice"> Mantra </label>
+            <input type="radio" class="text-choice" id="input-radio" name="user-choice" value="mantra-t">
+          </div>
+          <div class="wrapper-text-area">
+            <label class="write-label" for="input"> Write phrase: </label>
+            <input type="textarea" class="t-area" id="text-area" >
+              <button class="hidden-f" id="submit">Submit</button>
+          </div>
+          </form>
+        </div>
+    </section>
+    <section class="wrapper-button">
+      <button class="add-message-btn"> Add message here! </button>
+    </section>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
