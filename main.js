@@ -4,12 +4,23 @@ var mantraInput = document.querySelector('#mantra');
 var receiveBtn = document.querySelector(".receive-btn");
 var imgWrapper = document.querySelector(".wrapper-img")
 var bigBellImg = document.querySelector("#big-bell");
-var hiddenPar = document.querySelector(".hidden-text")
+var hiddenPar = document.querySelector(".display-text")
 var radioBtns = document.querySelectorAll('.radioBtns-class')
+var formStru = document.querySelector("#form-page")
+var formAccess = document.querySelector(".add-message-btn")
+var submit = document.querySelector('#submit')
+var inputText = document.querySelector(".writehere")
+var formInputs = document.querySelectorAll(".text-choice")
 
-//event Listeners
-
+// Event listeners here!
 receiveBtn.addEventListener('click', display)
+formAccess.addEventListener('click', showForm)
+submit.addEventListener('click', showInput)
+
+
+
+
+
 
 
 // functions
@@ -21,7 +32,7 @@ function userSelector() {
     break
     }
   }
-}
+};
 
 
 function display() {
@@ -34,15 +45,47 @@ function display() {
   }
 };
 
-
-
-
-//
 function getRandomSaying(arr) {
   var randomIndex = Math.floor(Math.random()* arr.length)
   var saying = arr[randomIndex]
   return saying
 };
+
+function showForm() {
+  formStru.classList.remove("hidden-f");
+  submit.classList.remove("hidden-f");
+  bigBellImg.style.display = 'none'
+}
+
+function textareaBtn() {
+  for(var i = 0; i < formInputs.length; i++ ){
+    if(formInputs[i].checked) {
+    checkedValue = formInputs[i].value;
+    break
+    }
+  }
+}
+
+function showInput() {
+  textareaBtn()
+  bigBellImg.style.display = 'none'
+  if(checkedValue === "affirmation2" && checkedValue === "montra2" &&checkedValue === "text" ) {
+    hiddenPar.innerText = inputText.value
+  }else {
+    hiddenPar.innerText = "Sorry! There are not enough inputs filled in."
+  }
+};
+
+
+
+
+
+
+
+
+
+
+
 
 
 // variables node main.js <terminal>
@@ -57,3 +100,4 @@ var mantraSayings = ['Breathing in, I send myself love. Breating out, i send lov
 // var mantOutput = getRandomSaying(mantraSayings)
 // console.log(mantOutput);
 var usersChoice;
+var checkedValue;

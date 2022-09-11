@@ -23,8 +23,28 @@
       </article>
     </section>
     <section class="wrapper-img">
-        <p class="hidden-text"></p>
-      <img id="big-bell" src="assets/meditate.svg" alt="bell-icon">
+        <p class="display-text"></p>
+        <img id="big-bell" src="assets/meditate.svg" alt="bell-icon">
+        <div class="form-components">
+          <form class="hidden-f form-container" id="form-page">
+          <div class="wrapper-aff2">
+            <label class="aff-input" for="text-choice"> Affirmation</label>
+            <input type="radio" class="text-choice" id="input-aff" name="user-choice" value="affirmation2">
+          </div>
+          <div class="wrapper-mant2">
+            <label class="mant-input" for="text-choice"> Mantra </label>
+            <input type="radio" class="text-choice" id="input-radio" name="user-choice" value="montra2">
+          </div>
+          <div class="wrapper-text-area">
+            <label class="write-here text-choice" for="input"> Write phrase: </label>
+            <input type="textarea" class="text-a text-choice" id="text-area" value="text">
+              <button class="hidden-f" id="submit">Submit</button>
+          </div>
+          </form>
+        </div>
+    </section>
+    <section class="wrapper-button">
+      <button class="add-message-btn"> Add message here! </button>
     </section>
     <script type="text/javascript" src="main.js"></script>
   </body>
