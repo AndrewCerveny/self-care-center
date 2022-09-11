@@ -17,8 +17,7 @@ receiveBtn.addEventListener('click', display)
 formAccess.addEventListener('click', showForm)
 submit.addEventListener('click',showInput)
 
-//message to self
-//inputText.values not responding
+
 
 
 
@@ -71,14 +70,14 @@ function textareaBtn() {
 
 function showInput(event) {
   event.preventDefault()
-  bigBellImg.classList.add("hidden-f");
   textareaBtn();
-  if(checkedValue === "affirmation-t" ) {
-    return hiddenPar.innertext = inputText.value
-  }else if (checkedValue === "mantra-t") {
-    return hiddenPar.innerText = inputText.value
+  bigBellImg.classList.add("hidden-f");
+  if(checkedValue === "aff-t") {
+    hiddenPar.innerText = inputText.value
+  }else if(checkedValue === "mantra-t") {
+   hiddenPar.innerText = inputText.value
   } else {
-    return hiddenPar.innerText = "Must click a box"
+    return hiddenPar.innerText = "Must click a box!"
   }
 };
 
