@@ -9,13 +9,14 @@ var radioBtns = document.querySelectorAll('.radioBtns-class')
 var formStru = document.querySelector("#form-page")
 var formAccess = document.querySelector(".add-message-btn")
 var submit = document.querySelector('#submit')
-var inputText = document.querySelector(".writehere")
+var inputText = document.querySelector("#text-area")
 var formInputs = document.querySelectorAll(".text-choice")
 
 // Event listeners here!
 receiveBtn.addEventListener('click', display)
 formAccess.addEventListener('click', showForm)
-submit.addEventListener('click', showInput)
+submit.addEventListener('click',showInput)
+
 
 
 
@@ -29,6 +30,7 @@ function userSelector() {
   for(var i= 0; i < radioBtns.length; i++) {
     if(radioBtns[i].checked) {
     usersChoice = radioBtns[i].value;
+    console.log(radioBtns.value);
     break
     }
   }
@@ -58,23 +60,27 @@ function showForm() {
 }
 
 function textareaBtn() {
-  for(var i = 0; i < formInputs.length; i++ ){
+  for(var i = 0; i < formInputs.length; i++ ) {
     if(formInputs[i].checked) {
     checkedValue = formInputs[i].value;
     break
     }
   }
-}
+};
 
 function showInput() {
-  textareaBtn()
-  bigBellImg.style.display = 'none'
-  if(checkedValue === "affirmation2" && checkedValue === "montra2" &&checkedValue === "text" ) {
-    hiddenPar.innerText = inputText.value
-  }else {
-    hiddenPar.innerText = "Sorry! There are not enough inputs filled in."
+  bigBellImg.classList.add("hidden-f");
+  textareaBtn();
+  if(checkedValue === "affirmation2" ) {
+    return hiddenPar.innertext = inputText.value
+  }else if (checked === "mantra2") {
+    return hiddenPar.innerText = inputText.value
+  } else {
+    return hiddenPar.innerText = "Must click a box"
   }
 };
+
+
 
 
 
